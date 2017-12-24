@@ -5,7 +5,7 @@ ask :branch, ENV['BRANCH'] || `git rev-parse --abbrev-ref HEAD`.chomp
 set :repo_url, "https://github.com/pyama86/alexa-oauth.git"
 set :deploy_to, '/opt/alexa-oauth'
 append :linked_dirs, 'log', 'tmp/pids','tmp/sockets', 'scripts'
-
+set :linked_files, %w{.env}
 set :bundle_roles, :app
 
 ask(:user, ENV['CAPUSER'] || ENV['USER'])

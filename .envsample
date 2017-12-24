@@ -1,0 +1,5 @@
+CONSUMER_KEY=twitter app consumer key
+CONSUMER_SECRET=twitter app consumer sectet key
+VENDOR_ID=alexa app vendor id
+CALLBACK_URL=your collback id
+SESSION_SECRET=random string
