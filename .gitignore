@@ -1,4 +1,5 @@
 .env
 .bundle/*
 vendor/*
+log/*
 config/deploy/*

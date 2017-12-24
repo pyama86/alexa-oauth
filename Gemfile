@@ -1,5 +1,4 @@
 source 'http://rubygems.org'
-ruby '2.3.1'
 
 gem 'sinatra', '1.4.7'
 gem 'thin', '1.6.4'
@@ -14,4 +13,5 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano3-puma'
+  gem 'capistrano-rbenv'
 end

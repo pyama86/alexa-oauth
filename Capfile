@@ -4,7 +4,7 @@ require 'capistrano/deploy'
 require 'capistrano/bundler'
 require 'capistrano/scm/git'
 require 'capistrano/puma'
-
+require 'capistrano/rbenv'
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma  # Default puma tasks
 install_plugin Capistrano::Puma::Workers  # if you want to control the workers (in cluster mode)

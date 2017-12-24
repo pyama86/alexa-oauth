@@ -1,9 +1,9 @@
 # coding: utf-8
 
-set :application, 'oauth-server'
+set :application, 'alexa-oauth'
 ask :branch, ENV['BRANCH'] || `git rev-parse --abbrev-ref HEAD`.chomp
-
-set :deploy_to, '/opt/oauth-server'
+set :repo_url, "https://github.com/pyama86/alexa-oauth.git"
+set :deploy_to, '/opt/alexa-oauth'
 append :linked_dirs, 'log', 'tmp/pids','tmp/sockets', 'scripts'
 
 set :bundle_roles, :app
@@ -15,6 +15,10 @@ set :pty, true
 set :use_sudo, false
 set :keep_releases, 5
 
+#set :rbenv_path, '~/.rbenv'
+set :rbenv_type, :user
+set :rbenv_ruby, '2.3.6'
+set :rbenv_map_bins, %w{rake gem bundle ruby puma pumactl}
 set :puma_bind, ["tcp://0.0.0.0:9292", "unix://#{shared_path}/tmp/sockets/puma.sock"]
 SSHKit.config.umask = '002'
 
