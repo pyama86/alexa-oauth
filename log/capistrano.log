@@ -1,0 +1,14 @@
+# Logfile created on 2017-12-24 11:50:19 +0900 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-24 11:50:19 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8d69e1e2] Running /usr/bin/env mkdir -p /tmp on alexa.pyama.fun
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-24 11:50:40 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [212b0569] Running /usr/bin/env mkdir -p /tmp as pyama@alexa.pyama.fun
+  INFO [212b0569] Finished in 0.872 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-oauth-server-production-yamashitakazuhiko.sh 100.0%
+  INFO [2b8b6f21] Running /usr/bin/env chmod 700 /tmp/git-ssh-oauth-server-production-yamashitakazuhiko.sh as pyama@alexa.pyama.fun
+  INFO [2b8b6f21] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [764b8072] Running /usr/bin/env git ls-remote  HEAD as pyama@alexa.pyama.fun
